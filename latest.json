@@ -6,6 +6,10 @@
     "darwin-aarch64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1FPbklNN2tVbGs1YWRLaWZ6QXVGZlVhTjVhMWVHTm40d2FnaDU3emUwcU53YUNHZXgxTDNDOGowd2ZhSjNnaUdjUW5jbzJPYS9kSXpSeXFMSTFoWUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMjA5MzM5CWZpbGU6QWlEby5hcHAudGFyLmd6ClEvVTdSSkFXRERXQVNlbFllTlQyYU01ZlBidjFRbndoL0lMaVhXaXNudVRSdWJOSlczMWFnYXFndlppSjd6Q2pRb1VEc0pNbS9IaVd1dS9UT3UrS0NBPT0K",
       "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.3/AiDo.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1lMbTB6MFVXRFF4RkppaEx3c0doNUdjZU5sQzB1VU5pMVpMZWhicEhQLy91dEJhWWlodGU1bVdYTnltaTluWHViL1lwWGV4dlR4aHhyZFZsdk5HZmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMjEyNjA3CWZpbGU6QWlEb180LjAuM194NjQtc2V0dXAuZXhlCldpZU91TTJvTHpmMDQ1MjJReUtJTDRzaURBQTJleE9ZTVZzMklNcnNGY2FzOHYrNkJIa0RjUStkZkNmOWtjN08yNVVDUnBZME9Ua2t0aDBiRjJWT0NRPT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.3/AiDo_4.0.3_x64-setup.exe"
     }
   }
 }
