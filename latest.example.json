@@ -1,0 +1,15 @@
+{
+  "version": "4.0.4",
+  "notes": "Fix issues and improve the desktop experience.",
+  "pub_date": "2026-06-23T00:00:00Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "paste AiDo.app.tar.gz.sig content here",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.4/AiDo.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "paste AiDo_4.0.4_x64-setup.exe.sig content here",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.4/AiDo_4.0.4_x64-setup.exe"
+    }
+  }
+}
