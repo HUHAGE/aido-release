@@ -1,6 +1,11 @@
 {
   "version": "4.0.3",
-  "notes": "Initial updater manifest. No update is published yet.",
-  "pub_date": "2026-06-23T00:00:00Z",
-  "platforms": {}
+  "notes": "AiDo 4.0.3 自动更新发布",
+  "pub_date": "2026-06-23T10:09:13.141Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1FPbklNN2tVbGs1YWRLaWZ6QXVGZlVhTjVhMWVHTm40d2FnaDU3emUwcU53YUNHZXgxTDNDOGowd2ZhSjNnaUdjUW5jbzJPYS9kSXpSeXFMSTFoWUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMjA5MzM5CWZpbGU6QWlEby5hcHAudGFyLmd6ClEvVTdSSkFXRERXQVNlbFllTlQyYU01ZlBidjFRbndoL0lMaVhXaXNudVRSdWJOSlczMWFnYXFndlppSjd6Q2pRb1VEc0pNbS9IaVd1dS9UT3UrS0NBPT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.3/AiDo.app.tar.gz"
+    }
+  }
 }
