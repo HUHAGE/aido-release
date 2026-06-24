@@ -1,15 +1,15 @@
 {
-  "version": "4.0.3",
-  "notes": "AiDo 4.0.3 自动更新发布",
-  "pub_date": "2026-06-23T10:09:13.141Z",
+  "version": "4.0.4",
+  "notes": "AiDo 4.0.4 自动更新发布",
+  "pub_date": "2026-06-24T06:13:06.103Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1FPbklNN2tVbGs1YWRLaWZ6QXVGZlVhTjVhMWVHTm40d2FnaDU3emUwcU53YUNHZXgxTDNDOGowd2ZhSjNnaUdjUW5jbzJPYS9kSXpSeXFMSTFoWUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMjA5MzM5CWZpbGU6QWlEby5hcHAudGFyLmd6ClEvVTdSSkFXRERXQVNlbFllTlQyYU01ZlBidjFRbndoL0lMaVhXaXNudVRSdWJOSlczMWFnYXFndlppSjd6Q2pRb1VEc0pNbS9IaVd1dS9UT3UrS0NBPT0K",
-      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.3/AiDo.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1Q2T29VR0gzdndDL2VJMjduQ29wUmpuZGxocXRqN3hVOTVxdGluRzBYdXRmSzhrMDFMUVRjWkEzdWs5OGxMMGRoUk84L09TVmhqZVY0WGdLSVRTS2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMjgxNDY3CWZpbGU6QWlEby5hcHAudGFyLmd6Cmw5QWIwM0FFcWRjQU4yZzRtSEFoYlBjWFVsT3kraS95R3JmUDcrd1VoMjIxMWowcTJFamIxV2JBWFVBYzEyRmg1UzNnY2R4R0RjU0lZc1VKVEM1N0NnPT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.4/AiDo.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1lMbTB6MFVXRFF4RkppaEx3c0doNUdjZU5sQzB1VU5pMVpMZWhicEhQLy91dEJhWWlodGU1bVdYTnltaTluWHViL1lwWGV4dlR4aHhyZFZsdk5HZmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMjEyNjA3CWZpbGU6QWlEb180LjAuM194NjQtc2V0dXAuZXhlCldpZU91TTJvTHpmMDQ1MjJReUtJTDRzaURBQTJleE9ZTVZzMklNcnNGY2FzOHYrNkJIa0RjUStkZkNmOWtjN08yNVVDUnBZME9Ua2t0aDBiRjJWT0NRPT0K",
-      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.3/AiDo_4.0.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1R0SlJYMlpENmZUSkcyM05naHFsM1hKT1lwbXNoNzBScTFZbzRiSFpBbWRNOXZuNUtwN2tMblBCZHFjd0drSlhFZlVYYitBb0Z3NDczMC9JSWp4RlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMjgxNDY3CWZpbGU6QWlEb180LjAuNF94NjQtc2V0dXAuZXhlCjJrb1JZSFQ2ZmxqUUk1NmN1ZlJCMTJwMmMraEdteEVIRjVkYUVCMkg2ZHFCWEtncUZhekRKV2JVenB5Zm5XR0d2Y3JCbGxISkZJMzVRdlBUcUd6TURRPT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.4/AiDo_4.0.4_x64-setup.exe"
     }
   }
 }
