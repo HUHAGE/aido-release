@@ -25,8 +25,8 @@ For every release request, first create a new version (increment the current pat
 2. Build signed macOS and Windows updater artifacts from `../aido`. Windows must use the NSIS installer and keep the install-path selection enabled:
 
    ```bash
-   export TAURI_SIGNING_PRIVATE_KEY_PATH="$PWD/src-tauri/aido-updater.key"
-   export TAURI_SIGNING_PRIVATE_KEY_PASSWORD=""
+   export TAURI_SIGNING_PRIVATE_KEY="$PWD/src-tauri/aido-updater.key"
+   export TAURI_SIGNING_PRIVATE_KEY_PASSWORD="<updater-key-password>"
    npm run tauri:build -- --target aarch64-apple-darwin
    npm run tauri:build -- --target x86_64-pc-windows-msvc
    ```

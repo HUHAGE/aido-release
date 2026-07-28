@@ -25,8 +25,8 @@ https://raw.githubusercontent.com/HUHAGE/aido-release/master/latest.json
 2. 从 `../aido` 构建已签名的 macOS 和 Windows 更新器产物。Windows 必须使用 NSIS 安装器，并保留安装路径选择：
 
    ```bash
-   export TAURI_SIGNING_PRIVATE_KEY_PATH="$PWD/src-tauri/aido-updater.key"
-   export TAURI_SIGNING_PRIVATE_KEY_PASSWORD=""
+   export TAURI_SIGNING_PRIVATE_KEY="$PWD/src-tauri/aido-updater.key"
+   export TAURI_SIGNING_PRIVATE_KEY_PASSWORD="<updater-key-password>"
    npm run tauri:build -- --target aarch64-apple-darwin
    npm run tauri:build -- --target x86_64-pc-windows-msvc
    ```
