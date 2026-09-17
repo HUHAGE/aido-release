@@ -1,6 +1,6 @@
 {
   "version": "4.0.8",
-  "notes": "新增「实体类生成器」菜单：支持从 DBeaver 自动读取数据库连接或手动配置，测试连通性、读取表结构并一键生成 Epoint 风格 Java 实体类，兼容 MySQL、Oracle、SQL Server 以及达梦、金仓、PostgreSQL 等数据库。",
+  "notes": "新增「实体类生成器」：读取数据库表结构，一键生成实体类。\n\n• 连接来源：自动读取本机 DBeaver 已保存的连接（密码自动解密），也可手动填写 JDBC URL 与账号密码\n• 支持范围：MySQL、SQL Server、Oracle、达梦、人大金仓、PostgreSQL 等各类 JDBC 数据库\n• 操作流程：测试连接 → 获取表列表（支持搜索）→ 读取表结构 → 生成实体类\n• 结果处理：源码可直接复制、另存为，或写入指定输出目录\n• 类型映射：字段类型自动映射为 Java 类型，未收录的类型会单独提示，便于人工确认\n\n类名与代码格式沿用原有约定（表名去下划线后首字母大写，如 MTR_PROJECT → MTRPROJECT），与旧工具产出保持一致。\n读取表结构依赖本机 JDK/JRE 8+ 与对应 JDBC 驱动，默认复用 DBeaver 已下载的驱动。",
   "pub_date": "2026-09-17T06:15:54.589Z",
   "platforms": {
     "darwin-aarch64": {
