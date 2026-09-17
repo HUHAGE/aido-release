@@ -1,15 +1,15 @@
 {
-  "version": "4.0.7",
-  "notes": "新增 WebService 客户端代码生成工具，支持下载 Apache CXF；Markdown 阅读器支持文件夹导入与资源路径解析；新增更新说明查看功能。",
-  "pub_date": "2026-07-28T08:41:16.176Z",
+  "version": "4.0.8",
+  "notes": "新增「实体类生成器」菜单：支持从 DBeaver 自动读取数据库连接或手动配置，测试连通性、读取表结构并一键生成 Epoint 风格 Java 实体类，兼容 MySQL、Oracle、SQL Server 以及达梦、金仓、PostgreSQL 等数据库。",
+  "pub_date": "2026-09-17T06:15:54.589Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1pTR2VhVGx5RUowUzlmd2JHRkk5eWdBMEwvN2pzNmtocFU0Y1hETTB1Q3ljMUpGS1kxSkt3SDhCM2d0UTZ0Zzl2Y0dMWUdzUkdFYUJ5b2NUQjBuN3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MjI3Njk1CWZpbGU6QWlEby5hcHAudGFyLmd6Ck85UUJNRW92czZ2TS9ueDV4VDJWdzg1c2RyL0JDd0gwZHpZK2l3bXJZUVI2eVhud0ltMEc3UVdTeVFYVkJ0cFhxTVdYdkNlZzFlekN1SDk0dXYrTkJRPT0K",
-      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.7/AiDo.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1N3aDlZOEtWQzZmUFV1WjI3Y2FJUFVlSDJkUG9XSG5xU3FKaXUxcWEzVjZ2ZUxRRXJwbGhYRXVYTjB4UVVKYVdhWGYvMEowUUU0ZnNpRFBEY0l3RWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NjI0OTgxCWZpbGU6QWlEby5hcHAudGFyLmd6ClJhdjJ5MTh4WVBkZlN0cUdUV3NOTnVSOFJaQ0ZwUUF6VHZVdlhiK0pNOC81d3BGdFB2eFdPQ200U0tRYlJCZi9WRmlpcUlMN2dBai8zbU1Id0JiRUR3PT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.8/AiDo.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1k2YWVDYnNhUXROYkt2SGI1bjBuZGEzL00ydWh0SXpheGRaOEI4aXF5NWdRL3lkUFh6aGttTVFQamY2L0t2aXlaN2xTVlpwK1l0TkVTSkJHMVZDakE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MjI4MDE0CWZpbGU6QWlEb180LjAuN194NjQtc2V0dXAuZXhlCi9MOE9kREx1V2Y0bFhsSkxuQmhsLzVBYmo0RmZpU25FeExMVnY1aUZoWWtIUzNaWnRyZDJ5TjZLNWxyTVhYTmlQY3JkSzJpTlpUYXh4L2xxcW0vRUJRPT0K",
-      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.7/AiDo_4.0.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY2YzUkszRmZ3NU11ZWhNN2ZhckJuRGZrV1hiVmxUZTJIcURZdHV0d3BxYkFHcXp1cWYyMkYvajFuYXBEd1BlaXQ3VVRnK3FpV0F5T0svMGd4VGZuemdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NjI1MjI1CWZpbGU6QWlEb180LjAuOF94NjQtc2V0dXAuZXhlCnBUdFZSNmdyY0RmeDhsL20rKzBHQzkvTnEwWldLNkVsUjBQdlVuYkVRcG5PWm9vQXpDSmhrNmhySDdrbWNXWEVySzFNbnMrY0h0MzNHeG8rWTY0ZkRnPT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.8/AiDo_4.0.8_x64-setup.exe"
     }
   }
 }
