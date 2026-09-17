@@ -28,8 +28,12 @@ https://raw.githubusercontent.com/HUHAGE/aido-release/master/latest.json
    export TAURI_SIGNING_PRIVATE_KEY="$PWD/src-tauri/aido-updater.key"
    export TAURI_SIGNING_PRIVATE_KEY_PASSWORD="<updater-key-password>"
    npm run tauri:build -- --target aarch64-apple-darwin
-   npm run tauri:build -- --target x86_64-pc-windows-msvc
+   npm run tauri:build -- --target x86_64-pc-windows-msvc --runner cargo-xwin
    ```
+
+   Windows 包是在 macOS 上用 `cargo-xwin` 交叉编译的，必须带 `--runner cargo-xwin`。
+   不要传 `--bundles nsis`：`--bundles` 在 macOS 上只接受宿主原生的取值，传 `nsis`
+   会被拒绝；`bundle.targets` 为 `all` 时 Windows 目标会自动选中 NSIS。
 
    构建结果必须同时包含：
 
@@ -42,7 +46,28 @@ https://raw.githubusercontent.com/HUHAGE/aido-release/master/latest.json
    node scripts/update-latest.mjs --version <version> --notes "Release notes" --bundle-dir <本次构建产物目录>
    ```
 
-4. 检查新版本目录、`latest.json` 和四个签名/安装文件都已生成后，提交并推送当前仓库；同时提交并推送 `../aido` 中的版本号变更。
+   脚本只会拷贝带 `.sig` 的产物，因此没有更新签名的 macOS `.dmg` 不会被自动拷贝，
+   需要手动放进去，保证发布目录完整：
+
+   ```bash
+   cp <本次构建产物目录>/AiDo_<version>_aarch64.dmg releases/v<version>/
+   ```
+
+4. 推送前先做校验：
+
+   - 每个签名都必须与 `../aido/src-tauri/tauri.conf.json` 中配置的公钥匹配，
+     否则所有客户端的更新都会卡在签名校验：
+
+   ```bash
+   node ../aido/scripts/verify-updater-signature.mjs releases/v<version>/AiDo.app.tar.gz
+   node ../aido/scripts/verify-updater-signature.mjs releases/v<version>/AiDo_<version>_x64-setup.exe
+   ```
+
+   - 确认 `latest.json` 里是新版本号且同时含 `darwin-aarch64`、`windows-x86_64`，
+     并且每个 `url` 都能指向刚提交的文件。
+   - 确认 `releases/v<version>/` 里没有混入旧版本的文件。
+
+   检查通过后，提交并推送当前仓库；同时提交并推送 `../aido` 中的版本号变更。
 
 ## 产物 URL
 

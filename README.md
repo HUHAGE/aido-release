@@ -28,8 +28,13 @@ For every release request, first create a new version (increment the current pat
    export TAURI_SIGNING_PRIVATE_KEY="$PWD/src-tauri/aido-updater.key"
    export TAURI_SIGNING_PRIVATE_KEY_PASSWORD="<updater-key-password>"
    npm run tauri:build -- --target aarch64-apple-darwin
-   npm run tauri:build -- --target x86_64-pc-windows-msvc
+   npm run tauri:build -- --target x86_64-pc-windows-msvc --runner cargo-xwin
    ```
+
+   The Windows build cross-compiles from macOS with `cargo-xwin`, so it must pass
+   `--runner cargo-xwin`. Do not pass `--bundles nsis`: `--bundles` only accepts
+   host-native values on macOS and would reject it. With `bundle.targets` set to
+   `all`, NSIS is selected automatically for the Windows target.
 
    The build must produce both:
 
@@ -42,7 +47,30 @@ For every release request, first create a new version (increment the current pat
    node scripts/update-latest.mjs --version <version> --notes "Release notes" --bundle-dir <this-build-artifacts>
    ```
 
-4. Verify the new release directory, `latest.json`, and all four signed/install files, then commit and push this repository; also commit and push the version bump in `../aido`.
+   The script only copies artifacts that have a matching `.sig`, so the macOS
+   `.dmg` (which has no updater signature) is not copied automatically. Copy it in
+   by hand so the release directory stays complete:
+
+   ```bash
+   cp <this-build-artifacts>/AiDo_<version>_aarch64.dmg releases/v<version>/
+   ```
+
+4. Verify the release before pushing:
+
+   - Every signature must match the public key configured in
+     `../aido/src-tauri/tauri.conf.json`, otherwise all clients fail the update
+     signature check:
+
+   ```bash
+   node ../aido/scripts/verify-updater-signature.mjs releases/v<version>/AiDo.app.tar.gz
+   node ../aido/scripts/verify-updater-signature.mjs releases/v<version>/AiDo_<version>_x64-setup.exe
+   ```
+
+   - Check that `latest.json` has the new version plus both `darwin-aarch64` and
+     `windows-x86_64`, and that each `url` resolves to the file just committed.
+   - Confirm no file from a previous version leaked into `releases/v<version>/`.
+
+   Then commit and push this repository; also commit and push the version bump in `../aido`.
 
 ## Artifact URLs
 
