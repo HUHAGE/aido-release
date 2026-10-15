@@ -1,15 +1,15 @@
 {
-  "version": "4.0.8",
-  "notes": "新增「实体类生成器」：读取数据库表结构，一键生成实体类。\n\n• 连接来源：自动读取本机 DBeaver 已保存的连接（密码自动解密），也可手动填写 JDBC URL 与账号密码\n• 支持范围：MySQL、SQL Server、Oracle、达梦、人大金仓、PostgreSQL 等各类 JDBC 数据库\n• 操作流程：测试连接 → 获取表列表（支持搜索）→ 读取表结构 → 生成实体类\n• 结果处理：源码可直接复制、另存为，或写入指定输出目录\n• 类型映射：字段类型自动映射为 Java 类型，未收录的类型会单独提示，便于人工确认\n\n类名与代码格式沿用原有约定（表名去下划线后首字母大写，如 MTR_PROJECT → MTRPROJECT），与旧工具产出保持一致。\n读取表结构依赖本机 JDK/JRE 8+ 与对应 JDBC 驱动，默认复用 DBeaver 已下载的驱动。",
-  "pub_date": "2026-09-17T06:15:54.589Z",
+  "version": "4.0.9",
+  "notes": "本次更新改进「实体类生成器」的 Java 运行环境与 JDBC 驱动管理。\n\n• Java 运行环境：自动检测多个本机 Java，按驱动要求选择合适版本，也可手动指定 Java 可执行文件\n• 驱动发现：完善 DBeaver 驱动目录扫描，支持从手选目录查找驱动，并按数据库类型整理展示\n• 兼容处理：驱动加载失败时尝试其他 Java 运行环境，改善不同 Java 与 JDBC 驱动版本搭配时的连接体验\n• 排障指引：针对缺少驱动、Java 版本不匹配、认证与网络等连接错误，提供更明确的原因和处理建议\n\n读取数据库表结构仍需本机安装 Java 8 或更高版本，并准备与数据库及 Java 版本匹配的 JDBC 驱动。",
+  "pub_date": "2026-10-15T09:31:37.827Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1N3aDlZOEtWQzZmUFV1WjI3Y2FJUFVlSDJkUG9XSG5xU3FKaXUxcWEzVjZ2ZUxRRXJwbGhYRXVYTjB4UVVKYVdhWGYvMEowUUU0ZnNpRFBEY0l3RWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NjI0OTgxCWZpbGU6QWlEby5hcHAudGFyLmd6ClJhdjJ5MTh4WVBkZlN0cUdUV3NOTnVSOFJaQ0ZwUUF6VHZVdlhiK0pNOC81d3BGdFB2eFdPQ200U0tRYlJCZi9WRmlpcUlMN2dBai8zbU1Id0JiRUR3PT0K",
-      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.8/AiDo.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY1RZSFQxcjMzYkI4b0lMNklCNkpISnU2bXdweCtJd3dhWU9td2M5RStlVG1tRnRSenBNQitvYmkxMXl4YXNIOFE2KzJmL1J5WTFwREpFK3RXQTgzZEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDU2NjU5CWZpbGU6QWlEby5hcHAudGFyLmd6CldGTlkvR1VhTEVLMnFLYjB6d3FOSnprUzhoZ0srWWI2RHB3dG5WTkJLbVI5TDI3SkVzaVpOcmZxRXRJaEVsOHhvUjNBQkpWOTRuY2VFZkJ6eXdUaUJBPT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.9/AiDo.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY2YzUkszRmZ3NU11ZWhNN2ZhckJuRGZrV1hiVmxUZTJIcURZdHV0d3BxYkFHcXp1cWYyMkYvajFuYXBEd1BlaXQ3VVRnK3FpV0F5T0svMGd4VGZuemdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NjI1MjI1CWZpbGU6QWlEb180LjAuOF94NjQtc2V0dXAuZXhlCnBUdFZSNmdyY0RmeDhsL20rKzBHQzkvTnEwWldLNkVsUjBQdlVuYkVRcG5PWm9vQXpDSmhrNmhySDdrbWNXWEVySzFNbnMrY0h0MzNHeG8rWTY0ZkRnPT0K",
-      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.8/AiDo_4.0.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRb1ZCb0RlMk9oY2Q4dGVqTXlTUjlmTjJpVDhBMlpVaE5FQVBnSjVNN1YzM3ZGOUZzUW80aWVOMlFKVkJ2eDJVckp5bFdtMjlVS3hpYjgrWTU0UVdJMFcyY2haTmIwUEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDU2NjU5CWZpbGU6QWlEb180LjAuOV94NjQtc2V0dXAuZXhlCkM3NG11ZFlyRm40K3dGNDQrV0k2Vmo1VmpqRXRRbUZVdjljUm50WDByZ0J1WlBHMU9jaTZReFdrbVhTOVRVUTZoQ1RFMVVwdytlZTUyM3pFKzZib0JnPT0K",
+      "url": "https://raw.githubusercontent.com/HUHAGE/aido-release/master/releases/v4.0.9/AiDo_4.0.9_x64-setup.exe"
     }
   }
 }
